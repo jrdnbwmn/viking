@@ -57,8 +57,7 @@ p { margin: 0 auto $p-mb auto; }
 // Small
 small,
 .small {
-    font-weight: normal;
-    line-height: 1;
+    font-size: .6rem !important;
 }
 
 // A better looking default horizontal rule
@@ -86,8 +85,8 @@ hr {
 // Utilities
 // -------------------------------------------------------------------
 // Weight
-.bold                    { font-weight: bold; }
-.regular                 { font-weight: normal; }
+.bold                    { font-weight: 700; }
+.regular                 { font-weight: 400; }
 .italic                  { font-style: italic; }
 
 // Text align

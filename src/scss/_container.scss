@@ -6,3 +6,45 @@
     max-width: $max-container-width;
     width: 90%;
 }
+
+.left-column {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $left-column-width;
+    height: 100vh;
+
+    h4 {
+        transform: rotate(-90deg);
+        margin: 0;
+        bottom: $space-1;
+    }
+
+    img {
+        max-width: 18px;
+        max-height: 18px;
+    }
+}
+
+.body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(45% - 3.5rem);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.navigation {
+    text-transform: uppercase;
+
+    .current {
+        color: $primary-color !important;
+    }
+
+    li {
+        letter-spacing: 1px;
+    }
+}

@@ -15,9 +15,11 @@ $white:                   #fff !default;
 $blue:                    #428bca !default;
 $green:                   #6fbb57 !default;
 $orange:                  #f0ad4e !default;
+$red:                     #c03b2b !default;
+$tan:                     #f5f4f0 !default;
 
 // Color scheme
-$primary-color:           $blue !default;
+$primary-color:           $red !default;
 $secondary-color:         $green !default;
 $tertiary-color:          $orange !default;
 
@@ -41,7 +43,7 @@ $font-family--ui:         $sans-serif !default;
 
 // Type scale
 // Good tool: http://type-scale.com/
-$h1:                      2.369rem !default;
+$h1:                      3rem !default;
 $h2:                      1.777rem !default;
 $h3:                      1.333rem !default;
 $h4:                      1rem !default;
@@ -50,7 +52,7 @@ $h6:                      .75rem !default;
 
 // Finer control over type scale after certain breakpoint (off by default)
 $responsive-type:         false !default;
-$h1--desktop:             2.369rem !default;
+$h1--desktop:             3rem !default;
 $h2--desktop:             1.777rem !default;
 $h3--desktop:             1.333rem !default;
 $h4--desktop:             1rem !default;
@@ -61,8 +63,8 @@ $h6--desktop:             .75rem !default;
 $text-color:              $dark-gray !default;
 
 // Text sizes
-$font-size--mobile:       14px !default;
-$font-size--desktop:      15px !default;
+$font-size--mobile:       19px !default;
+$font-size--desktop:      22px !default;
 $font-size--lg:           $h3 !default;
 $font-size--sm:           $h5 !default;
 
@@ -95,15 +97,15 @@ $space-3:                 $baseline*8 !default;
 $space-4:                 $baseline*11 !default;
 
 // Specific margins
-$p-mb:                    $space-2 !default;
+$p-mb:                    $space-1 !default;
 $heading-mb:              $p-mb !default;
 
 
 // Links
 // -------------------------------------------------------------------
-$link-color:              $primary-color !default;
-$link-hover-color:        darken($primary-color, 10%) !default;
-$active-link-color:       darken($primary-color, 25%) !default;
+$link-color:              $text-color !default;
+$link-hover-color:        $primary-color !default; // darken($text-color, 10%)
+$active-link-color:       darken($primary-color, 15%) !default;
 
 
 // Buttons
@@ -127,3 +129,9 @@ $border-width:            1px !default;
 // Animations
 // -------------------------------------------------------------------
 $fade:                    .2s ease-out !default;
+
+
+// Blocks
+// -------------------------------------------------------------------
+$left-column-width:       3.5rem !default;
+$hero-width:              calc(55%) !default;
