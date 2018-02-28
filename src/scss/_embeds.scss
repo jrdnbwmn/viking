@@ -3,11 +3,8 @@
 // Make stuff responsive
 img, canvas, iframe, video, svg { max-width: 100%; }
 
-.hero {
-    position: fixed;
-    top: 0;
-    left: $left-column-width;
-    bottom: 0;
-    width: $hero-width;
-    height: 100vh;
-}
+.logo-container { bottom: .6rem; }
+
+.logo--mobile { max-height: 19px; }
+
+.logo--desktop { max-width: 19px; }

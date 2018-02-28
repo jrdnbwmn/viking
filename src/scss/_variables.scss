@@ -1,7 +1,7 @@
 // Colors
 // -------------------------------------------------------------------
 // Grayscale
-$gray-base:               #87919d !default;
+$gray-base:               #6e7784 !default;
 
 $black:                   #000 !default;
 $darkest-gray:            darken($gray-base, 36%) !default;
@@ -12,16 +12,14 @@ $lightest-gray:           lighten($gray-base, 36%) !default;
 $white:                   #fff !default;
 
 // Hues
-$blue:                    #428bca !default;
-$green:                   #6fbb57 !default;
-$orange:                  #f0ad4e !default;
 $red:                     #c03b2b !default;
 $tan:                     #f5f4f0 !default;
+$blue:                    #428bca !default;
 
 // Color scheme
 $primary-color:           $red !default;
-$secondary-color:         $green !default;
-$tertiary-color:          $orange !default;
+$secondary-color:         $tan !default;
+$tertiary-color:          $blue !default;
 
 
 // Baseline
@@ -43,17 +41,17 @@ $font-family--ui:         $sans-serif !default;
 
 // Type scale
 // Good tool: http://type-scale.com/
-$h1:                      3rem !default;
-$h2:                      1.777rem !default;
+$h1:                      2.3rem !default;
+$h2:                      2.3rem !default;
 $h3:                      1.333rem !default;
 $h4:                      1rem !default;
 $h5:                      .75rem !default;
 $h6:                      .75rem !default;
 
 // Finer control over type scale after certain breakpoint (off by default)
-$responsive-type:         false !default;
+$responsive-type:         true !default;
 $h1--desktop:             3rem !default;
-$h2--desktop:             1.777rem !default;
+$h2--desktop:             3rem !default;
 $h3--desktop:             1.333rem !default;
 $h4--desktop:             1rem !default;
 $h5--desktop:             .75rem !default;
@@ -63,7 +61,7 @@ $h6--desktop:             .75rem !default;
 $text-color:              $dark-gray !default;
 
 // Text sizes
-$font-size--mobile:       19px !default;
+$font-size--mobile:       18px !default;
 $font-size--desktop:      22px !default;
 $font-size--lg:           $h3 !default;
 $font-size--sm:           $h5 !default;
@@ -81,12 +79,12 @@ $line-height--heading:    1 !default;
 // -------------------------------------------------------------------
 // Breakpoints
 // Mobile Safari has problems with rems being used in media queries
-$breakpoint--sm:          40em !default;
-$breakpoint--md:          50em !default;
-$breakpoint--lg:          60em !default;
+$breakpoint--ty:          500px !default;
+$breakpoint--sm:          1200px !default;
+$breakpoint--lg:          1500px !default;
 
 // Max container width
-$max-container-width:     45em !default;
+$max-container-width:     1000px !default;
 
 
 // Spaces
@@ -103,8 +101,8 @@ $heading-mb:              $p-mb !default;
 
 // Links
 // -------------------------------------------------------------------
-$link-color:              $text-color !default;
-$link-hover-color:        $primary-color !default; // darken($text-color, 10%)
+$link-color:              $primary-color !default;
+$link-hover-color:        darken($primary-color, 9%) !default;
 $active-link-color:       darken($primary-color, 15%) !default;
 
 
@@ -115,7 +113,7 @@ $button-padding:          .45rem 1rem .35rem !default;
 
 // Forms
 // -------------------------------------------------------------------
-$form-padding:            .45rem .8rem .35rem !default;
+$form-padding:            .35rem .8rem .25rem !default;
 
 
 // Borders
@@ -131,7 +129,7 @@ $border-width:            1px !default;
 $fade:                    .2s ease-out !default;
 
 
-// Blocks
+// Sections
 // -------------------------------------------------------------------
-$left-column-width:       3.5rem !default;
+$header-width:            3.5rem !default;
 $hero-width:              calc(55%) !default;

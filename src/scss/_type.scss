@@ -95,6 +95,10 @@ hr {
 .align--right            { text-align: right; }
 .align--justify          { text-align: justify; }
 
+@media screen and (max-width: $breakpoint--ty) {
+    .align--center-on-tiny { text-align: center; }
+}
+
 // Line height
 .line-height--base       { line-height: $line-height--base; }
 .line-height--heading    { line-height: $line-height--heading; }

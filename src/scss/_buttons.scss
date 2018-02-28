@@ -9,6 +9,8 @@
     display: inline-block; // Allow us to better style box model properties
     font-family: $font-family--ui;
     font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
     line-height: $line-height--base;
     margin-bottom: 0; // For input.btn
     padding: $button-padding;
@@ -93,26 +95,5 @@ a.btn {
     &:active {
         background-color: transparent;
         border-color: $light-gray;
-    }
-}
-
-// Dark background button
-.btn--dark-bg {
-    background-color: transparent;
-    border-color: $white;
-    border-width: $border-width;
-    color: $white;
-
-    &:hover,
-    &:focus {
-        background-color: $white;
-        border-color: $white;
-        color: $text-color;
-    }
-
-    &:active {
-        background-color: $lightest-gray;
-        border-color: $lightest-gray;
-        color: $text-color;
     }
 }
