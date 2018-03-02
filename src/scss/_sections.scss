@@ -8,20 +8,6 @@
         left: 0;
         bottom: 0;
         width: $header-width;
-        flex-basis: $header-width;
-        max-width: $header-width;
-        overflow: scroll;
-
-        h4 {
-            transform: rotate(-90deg);
-            margin-bottom: 0;
-            bottom: $space-1;
-        }
-
-        .icon {
-            max-width: 18px;
-            max-height: 18px;
-        }
     }
 }
 
@@ -43,7 +29,7 @@
     }
 }
 
-// Hero section
+// Hero
 .hero-container { height: 200px; }
 
 .hero {
@@ -63,7 +49,6 @@
         top: 0;
         right: 0;
         bottom: 0;
-        flex-basis: 610px;
         max-width: 610px;
         overflow-y: scroll;
     }
